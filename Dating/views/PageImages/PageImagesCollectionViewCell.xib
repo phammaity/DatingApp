@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PageImagesCollectionViewCell" id="gTV-IL-0wX" customClass="PageImagesCollectionViewCell" customModule="Dating" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="627" height="741"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="627" height="741"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Jt-4Z-EG7">
+                        <rect key="frame" x="0.0" y="0.0" width="627" height="741"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGM-xW-UCM">
+                                <rect key="frame" x="0.0" y="0.0" width="627" height="701"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCw-cw-WOZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="500" height="701"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="500" id="m0K-5i-cfS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="bCw-cw-WOZ" firstAttribute="top" secondItem="UGM-xW-UCM" secondAttribute="top" id="Bvg-1G-Eeq"/>
+                                    <constraint firstItem="bCw-cw-WOZ" firstAttribute="height" secondItem="UGM-xW-UCM" secondAttribute="height" id="D4O-sl-kUb"/>
+                                    <constraint firstAttribute="trailing" secondItem="bCw-cw-WOZ" secondAttribute="trailing" id="MYm-J6-ecK"/>
+                                    <constraint firstItem="bCw-cw-WOZ" firstAttribute="leading" secondItem="UGM-xW-UCM" secondAttribute="leading" id="pXF-8G-GAA"/>
+                                    <constraint firstItem="bCw-cw-WOZ" firstAttribute="bottom" secondItem="UGM-xW-UCM" secondAttribute="bottom" id="yVk-md-rmz"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8OG-2f-xTx"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="adg-zG-WUf"/>
+                                <connections>
+                                    <outlet property="delegate" destination="gTV-IL-0wX" id="R4A-wf-8W7"/>
+                                </connections>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="rbh-yn-NTG">
+                                <rect key="frame" x="294" y="704" width="39" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.75294117650000003" green="0.87450980389999999" blue="0.98431372549999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.29411764709999999" green="0.66274509800000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UGM-xW-UCM" firstAttribute="top" secondItem="2Jt-4Z-EG7" secondAttribute="top" id="Cuv-Ho-kSb"/>
+                            <constraint firstAttribute="bottom" secondItem="rbh-yn-NTG" secondAttribute="bottom" id="PPO-e9-jvb"/>
+                            <constraint firstAttribute="trailing" secondItem="UGM-xW-UCM" secondAttribute="trailing" id="Q50-Gm-AJr"/>
+                            <constraint firstAttribute="bottom" secondItem="UGM-xW-UCM" secondAttribute="bottom" constant="40" id="aIM-fC-c3u"/>
+                            <constraint firstItem="UGM-xW-UCM" firstAttribute="leading" secondItem="2Jt-4Z-EG7" secondAttribute="leading" id="hKb-9u-qxy"/>
+                            <constraint firstItem="rbh-yn-NTG" firstAttribute="centerX" secondItem="UGM-xW-UCM" secondAttribute="centerX" id="hU8-jN-74U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2Jt-4Z-EG7" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="C0g-06-sJt"/>
+                <constraint firstItem="2Jt-4Z-EG7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Gwe-AL-Z28"/>
+                <constraint firstAttribute="trailing" secondItem="2Jt-4Z-EG7" secondAttribute="trailing" id="Y5e-FU-X3x"/>
+                <constraint firstAttribute="bottom" secondItem="2Jt-4Z-EG7" secondAttribute="bottom" id="d1t-vP-iuJ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="627" height="741"/>
+            <connections>
+                <outlet property="imageContainerView" destination="bCw-cw-WOZ" id="ly6-9V-oaD"/>
+                <outlet property="pageControl" destination="rbh-yn-NTG" id="5W2-Ft-iUE"/>
+                <outlet property="scrollView" destination="UGM-xW-UCM" id="3hg-db-qGa"/>
+                <outlet property="widthConstraint" destination="m0K-5i-cfS" id="k1B-yO-rEg"/>
+            </connections>
+            <point key="canvasLocation" x="250.00000000000003" y="212.61160714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
